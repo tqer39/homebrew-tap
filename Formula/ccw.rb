@@ -5,21 +5,21 @@
 class Ccw < Formula
   desc "Launch Claude Code in an isolated git worktree"
   homepage "https://github.com/tqer39/ccw-cli"
-  version "0.12.0"
+  version "0.13.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/tqer39/ccw-cli/releases/download/v0.12.0/ccw_0.12.0_darwin_amd64.tar.gz"
-      sha256 "829bfe7017520ab6d9907c652c6bf4a1719ae65d140db4497a1cd6f12b01713c"
+      url "https://github.com/tqer39/ccw-cli/releases/download/v0.13.0/ccw_0.13.0_darwin_amd64.tar.gz"
+      sha256 "991e4c9bd8c999aa60df81c6a51befe70bc8004a81a06ee07bd4e5b9b2cd337f"
 
       define_method(:install) do
         bin.install "ccw"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/tqer39/ccw-cli/releases/download/v0.12.0/ccw_0.12.0_darwin_arm64.tar.gz"
-      sha256 "a03d8f5eef860559249df5fac0894803a92ca83170a97c8be25785f6c4c1a2ed"
+      url "https://github.com/tqer39/ccw-cli/releases/download/v0.13.0/ccw_0.13.0_darwin_arm64.tar.gz"
+      sha256 "b94d2469a17be30ea9c457ada00c21f81f73f85a8b7a7d5b952ea7989263300d"
 
       define_method(:install) do
         bin.install "ccw"
@@ -29,15 +29,15 @@ class Ccw < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/tqer39/ccw-cli/releases/download/v0.12.0/ccw_0.12.0_linux_amd64.tar.gz"
-      sha256 "a66424ba1626ee1ddde5ccb955e8f5e774fd27fa6abfec13657f3155dd70432a"
+      url "https://github.com/tqer39/ccw-cli/releases/download/v0.13.0/ccw_0.13.0_linux_amd64.tar.gz"
+      sha256 "53524dcb17d4898743cded5fa1d13de702de762665f212a117ed8b708f2d45e7"
       define_method(:install) do
         bin.install "ccw"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/tqer39/ccw-cli/releases/download/v0.12.0/ccw_0.12.0_linux_arm64.tar.gz"
-      sha256 "330ad2b619e829b15fa22ec38d332a0c8d1783e4cb80a583dd668fd145e65c15"
+      url "https://github.com/tqer39/ccw-cli/releases/download/v0.13.0/ccw_0.13.0_linux_arm64.tar.gz"
+      sha256 "c0dd404371b6970e234993824300835421eae4cbe7543fe7c79b870ac6b0f814"
       define_method(:install) do
         bin.install "ccw"
       end
