@@ -5,21 +5,21 @@
 class Ccw < Formula
   desc "Launch Claude Code in an isolated git worktree"
   homepage "https://github.com/tqer39/ccw-cli"
-  version "0.1.0"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/tqer39/ccw-cli/releases/download/v0.1.0/ccw_0.1.0_darwin_amd64.tar.gz"
-      sha256 "3b32935da2b9b691a0548a0ca8862305f1a1e355299e45355a8f5e1efc92eb49"
+      url "https://github.com/tqer39/ccw-cli/releases/download/v0.2.0/ccw_0.2.0_darwin_amd64.tar.gz"
+      sha256 "457e22ac207c35f59db932f60d430ae74aa24b21806838844641906677e05d80"
 
       define_method(:install) do
         bin.install "ccw"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/tqer39/ccw-cli/releases/download/v0.1.0/ccw_0.1.0_darwin_arm64.tar.gz"
-      sha256 "7db45e7bf0210b508cee79fa93ba354b3ebd16e7020f3e18d90b917a2e5f564e"
+      url "https://github.com/tqer39/ccw-cli/releases/download/v0.2.0/ccw_0.2.0_darwin_arm64.tar.gz"
+      sha256 "09b779e3dbf220ceb4a68dad6fa932864ac9e76d315bfb5d45f7bc7aee5df31e"
 
       define_method(:install) do
         bin.install "ccw"
@@ -29,15 +29,15 @@ class Ccw < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/tqer39/ccw-cli/releases/download/v0.1.0/ccw_0.1.0_linux_amd64.tar.gz"
-      sha256 "a2e82dbc2a8c83085cd2eeb825ea8ea6d5e04d643bf4d9b0901786aa0a478510"
+      url "https://github.com/tqer39/ccw-cli/releases/download/v0.2.0/ccw_0.2.0_linux_amd64.tar.gz"
+      sha256 "313327fdafdeb0ac984fc309e2b3cd96fa85edad58b82623ba423f933c7daa27"
       define_method(:install) do
         bin.install "ccw"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/tqer39/ccw-cli/releases/download/v0.1.0/ccw_0.1.0_linux_arm64.tar.gz"
-      sha256 "f62ceced0783c5e8a4e3c8da851c106185432ac68f17cf58b351b1927806cba2"
+      url "https://github.com/tqer39/ccw-cli/releases/download/v0.2.0/ccw_0.2.0_linux_arm64.tar.gz"
+      sha256 "01ad949e70e856cd087dcc79110628d62451dce5e0f02fc2f8f285eea50da991"
       define_method(:install) do
         bin.install "ccw"
       end
